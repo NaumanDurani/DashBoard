@@ -23,21 +23,21 @@ const LandingPage = () => {
               </Col>
             </Row>
             <Row>
-              <Col lg={9} md={12} sm={12} className='  '>
+              <Col lg={9} md={12} sm={12}>
                 <Combine />
               </Col>
-              <Col lg={3} md={12} sm={12} className=' '>
+              <Col lg={3} md={12} sm={12}>
                 <PieChart />
               </Col>
             </Row>
-            <Row>
-              <Col lg={6} className=''>
+            <Row >
+              <Col lg={6} >
                 <LineChart />
               </Col>
-              <Col lg={3} className=''>
+              <Col lg={3} >
                 <PateintDivision />
               </Col>
-              <Col lg={3} className=''>
+              <Col lg={3} >
                 <LastGrapg />
               </Col>
             </Row>
@@ -45,6 +45,7 @@ const LandingPage = () => {
         </Row>
       </Container>
     </div>
+   
   );
 };
 

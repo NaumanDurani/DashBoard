@@ -50,6 +50,7 @@ const PieChart = () => {
             <Container >
                 <div className=' p-2   ' >
                     <span className=' GraphHeading d-flex justify-content-center p-2'>pateint by Gender</span>
+                   <div className='border'></div>
                     <canvas ref={chartRef} className='p-2 mt-4'></canvas>
                     <div className=' check text-center d-flex justify-content-between   justify-content-evenly mt-3 mb-3'>
                         <div className='mb-0'>

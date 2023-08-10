@@ -84,7 +84,7 @@ const CombinedChart = () => {
                 datasets: [
                     {
                         data: [80, 20],
-                        backgroundColor: ['rebeccapurple',"#2E8B57"],
+                        backgroundColor: ['rebeccapurple', "#2E8B57"],
                         borderWidth: 0
 
 
@@ -114,8 +114,14 @@ const CombinedChart = () => {
                 <div className='check' >
                     <div className='d-flex justify-content-between p-3 '>
                         <span className='GraphHeading'>outpatient vs. inpateint Trend</span>
-                        <span className='GraphHeading'>show more</span>
+                        <span className='GraphHeading'>show more
+                            <Icon icon="mingcute:down-fill"
+                                color="grey"
+                                width="18"
+                                height="18" />
+                        </span>
                     </div>
+                    <div className='border'></div>
                     <Row>
                         <Col lg={8}><canvas ref={barChartRef} className='p-3 mt-5 '></canvas></Col>
                         <Col lg={4}><canvas ref={pieChartRef} className=' p-4 mt-2'></canvas>

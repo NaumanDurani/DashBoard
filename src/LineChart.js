@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Chart, LinearScale, LineController, LineElement, PointElement, Title } from 'chart.js';
 import { Container } from 'react-bootstrap';
-
+import { Icon } from '@iconify/react';
 
 const LineChart = () => {
   const lineChartRef = useRef(null);
@@ -99,9 +99,15 @@ const LineChart = () => {
         <div className=' '>
           <div className='d-flex justify-content-between p-3 '>
             <span className='GraphHeading'>Time Admitted</span>
-            <span className='GraphHeading'>Today</span>
+            <span className='GraphHeading'>Today
+            <Icon icon="mingcute:down-fill"
+                                color="grey"
+                                width="18"
+                                height="18" />
+            </span>
           </div>
-          <canvas ref={lineChartRef} className='p-2 mb-3' ></canvas>
+          <div className='border'></div>
+          <canvas ref={lineChartRef} className='p-3 mb-3' ></canvas>
         </div>
       </Container>
     </div>
