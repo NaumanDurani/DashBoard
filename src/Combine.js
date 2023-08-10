@@ -79,12 +79,12 @@ const CombinedChart = () => {
         pieChartInstance.current = new Chart(pieCtx, {
             type: 'doughnut',
             data: {
-                labels: ['Red', 'SpaceFiller', 'Blue',],
+                labels: ['rebeccapurple', "#2E8B57",],
 
                 datasets: [
                     {
-                        data: [20, 80],
-                        backgroundColor: ['red', "blue",],
+                        data: [80, 20],
+                        backgroundColor: ['rebeccapurple',"#2E8B57"],
                         borderWidth: 0
 
 

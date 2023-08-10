@@ -70,10 +70,10 @@ const LineChart = () => {
   return (
     <div className=' bluee mt-3  '>
       <Container>
-        <div className=' mt-3 '>
+        <div className='  '>
           <span className=' lastGraphHeading d-flex '>3456</span>
           <span className='lastGrapgParagraph '>patient this month</span>
-          <canvas ref={lineChartRef} style={{}} className=' mt-5' ></canvas>
+          <canvas ref={lineChartRef} style={{marginTop:"90px"}} className='   ' ></canvas>
         </div>
       </Container>
     </div>

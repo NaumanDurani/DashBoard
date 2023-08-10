@@ -20,10 +20,10 @@ const PieChart = () => {
         chartInstance.current = new Chart(ctx, {
             type: 'doughnut',
             data: {
-                labels: ['Red', 'Blue', 'Yellow', 'Green'],
+                labels: [ 'Yellow', 'Green'],
                 datasets: [{
-                    data: [300, 50, 100, 200],
-                    backgroundColor: ['red', 'blue', 'yellow', 'green'],
+                    data: [50,50],
+                    backgroundColor: ['rebeccapurple', 'orange'],
                     borderWidth: 0
                 }]
             },
