@@ -13,10 +13,10 @@ const LandingPage = () => {
     <div>
       <Container fluid className='mt-3'>
         <Row>
-          <Col md={2}>
+          <Col lg={2} md={12} sm={12} >
             <Menu />
           </Col>
-          <Col md={10} style={{ backgroundColor: "#F0EAFD" }} className='p-4'>
+          <Col lg={10} md={12} sm={12}style={{ backgroundColor: "#F0EAFD" }} className='p-4'>
             <Row>
               <Col lg={12} md={12}>
                 <Service />
@@ -31,13 +31,13 @@ const LandingPage = () => {
               </Col>
             </Row>
             <Row >
-              <Col lg={6} >
+              <Col lg={6} md={6} sm={12} >
                 <LineChart />
               </Col>
-              <Col lg={3} >
+              <Col lg={3} md={6} sm={12} >
                 <PateintDivision />
               </Col>
-              <Col lg={3} >
+              <Col lg={3} md={12} sm={12} >
                 <LastGrapg />
               </Col>
             </Row>
