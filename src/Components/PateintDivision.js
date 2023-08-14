@@ -1,10 +1,11 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import { Icon } from '@iconify/react';
+import '../Css/Pateint.css'
 
 const PateintDivision = () => {
   return (
-    <div className=' check mt-3 radius '>
+    <div className=' bg-light mt-3  '>
         <Container className=' '>
             <div  className='mb-2' style={{lineHeight:"9px"}}>
                 <span className=' GraphHeading d-flex  justify-content-center p-4 '>pateint by Gender</span>

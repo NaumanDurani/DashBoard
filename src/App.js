@@ -1,6 +1,8 @@
-import Header from './Header';
+import Header from './Components/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import LandigPage from './LandigPage';
+import LandigPage from './Components/LandigPage';
+
+
 
 
 

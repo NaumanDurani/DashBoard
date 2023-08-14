@@ -1,0 +1,37 @@
+.PatientDevisonHeading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 9px;
+
+  color: grey;
+}
+
+.patient span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 9px;
+
+  color: grey;
+}
+.patient .iconify {
+  color: grey;
+  width: 23px;
+  height: 23px;
+}
+.patient .GraphHeading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: black;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.patient .nav-link div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.patient .nav-link div :hover {
+  color: rebeccapurple;
+}

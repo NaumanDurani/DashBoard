@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Container } from 'react-bootstrap';
 import { Chart, Title, ArcElement, CategoryScale, LinearScale, DoughnutController } from 'chart.js';
 import { Icon } from '@iconify/react';
+import '../Css/PieChart.css'
 
 const PieChart = () => {
     const chartRef = useRef(null);
@@ -46,7 +47,7 @@ const PieChart = () => {
 
     return (
 
-        <div className='check radius'>
+        <div className='bg-light mt-3'>
             <Container >
                 <div className=' p-2   ' >
                     <span className=' GraphHeading d-flex justify-content-center p-2'>pateint by Gender</span>

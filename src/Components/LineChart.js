@@ -2,10 +2,17 @@ import React, { useEffect, useRef } from 'react';
 import { Chart, LinearScale, LineController, LineElement, PointElement, Title } from 'chart.js';
 import { Container } from 'react-bootstrap';
 import { Icon } from '@iconify/react';
+import Dropdown from 'react-bootstrap/Dropdown';
+import '../Css/Line.css'
+import DropDown from './DropDown';
 
 const LineChart = () => {
   const lineChartRef = useRef(null);
   const lineChartInstance = useRef(null);
+  const backgroundColor = (event)=>{
+       const container = event.target.parentElement;
+       container.style.backgroundColor = "white";
+  }
   useEffect(() => {
 
     Chart.register(LinearScale, LineController, LineElement, PointElement, Title);
@@ -84,8 +91,6 @@ const LineChart = () => {
         },
       },
     });
-
-
     return () => {
       if (lineChartInstance.current) {
         lineChartInstance.current.destroy();
@@ -94,17 +99,15 @@ const LineChart = () => {
   }, []);
 
   return (
-    <div className='check mt-3 radius'>
-      <Container  >
+    <div className='bg-light mt-3 '>
+      <Container>
         <div className=' '>
-          <div className='d-flex justify-content-between p-3 '>
+          <div className='d-flex justify-content-between align-items-center p-3  '>
             <span className='GraphHeading'>Time Admitted</span>
-            <span className='GraphHeading'>Today
-            <Icon icon="mingcute:down-fill"
-                                color="grey"
-                                width="18"
-                                height="18" />
-            </span>
+            <div className=' d-flex  align-items-center justify-content-center'>
+                <span className='GraphHeading today-span '>Today</span>
+                  <div className='dropDown'><DropDown/></div> 
+          </div>    
           </div>
           <div className='border'></div>
           <canvas ref={lineChartRef} className='p-3 mb-3' ></canvas>

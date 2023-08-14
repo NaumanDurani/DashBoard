@@ -1,25 +1,30 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { Menu } from './Menu';
-import Service from './Service';
-import PieChart from './PieChart';
-import Combine from './Combine';
-import LineChart from './LineChart';
-import PateintDivision from './PateintDivision';
-import LastGrapg from './LastGrapg';
+import PieChart from '../Components/PieChart';
+import Combine from '../Components/Combine';
+import LineChart from '../Components/LineChart';
+import PateintDivision from '../Components/PateintDivision';
+import LastGrapg from '../Components/LastGrapg';
+import { useMediaQuery } from 'react-responsive';
+import SideNavBar from '../Components/SideNavBar'
+import Card from '../Components/Card'
+import Pateint from './Pateint';
+
 
 const LandingPage = () => {
+    const isMobile = useMediaQuery({ maxWidth: 991 });
   return (
     <div>
       <Container fluid className='mt-3'>
         <Row>
           <Col lg={2} md={12} sm={12} >
-            <Menu />
+           
+           {isMobile? '' : <SideNavBar/>}
           </Col>
           <Col lg={10} md={12} sm={12}style={{ backgroundColor: "#F0EAFD" }} className='p-4'>
             <Row>
               <Col lg={12} md={12}>
-                <Service />
+                <Card/>
               </Col>
             </Row>
             <Row>
@@ -35,7 +40,7 @@ const LandingPage = () => {
                 <LineChart />
               </Col>
               <Col lg={3} md={6} sm={12} >
-                <PateintDivision />
+                <Pateint />
               </Col>
               <Col lg={3} md={12} sm={12} >
                 <LastGrapg />

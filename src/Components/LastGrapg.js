@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import { Chart, LinearScale, LineController, LineElement, Title } from 'chart.js';
 import { Container } from 'react-bootstrap';
-import './main.css'
+import '../Css/LastGraph.css'
+
 
 const LineChart = () => {
   const lineChartRef = useRef(null);

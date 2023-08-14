@@ -1,0 +1,21 @@
+.bluee{
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    margin-bottom: 30px !important;
+}
+.lastGraphHeading{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    padding: 15px;
+    color: white;
+}
+.lastGrapgParagraph{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 9px;
+    color: white;
+    text-transform: capitalize;
+
+}
