@@ -3,16 +3,13 @@ import { Chart, CategoryScale, LinearScale, BarController, BarElement, Title, Ar
 import { Container, Row, Col } from 'react-bootstrap';
 import { Icon } from '@iconify/react';
 import '../Css/Combine.css'
+import DropDown from './DropDown';
 
 const CombinedChart = () => {
 	const barChartRef = useRef(null);
 	const pieChartRef = useRef(null);
 	const barChartInstance = useRef(null);
 	const pieChartInstance = useRef(null);
-	const backgroundColor = (event)=>{
-		const container = event.target.parentElement;
-		container.style.backgroundColor = "white";
-   }
 	useEffect(() => {
 		Chart.register(CategoryScale, LinearScale, BarController, BarElement, Title, ArcElement, DoughnutController);
 		if (barChartInstance.current) {
@@ -100,35 +97,35 @@ const CombinedChart = () => {
 		});
 	}, []);
 	return (
-<div className='bg-light Combine mt-3 '>
-	<Container>
-		<div className='check' >
-			<div className='d-flex justify-content-between p-3 '>
-			<span className='GraphHeading'>outpatient vs. inpateint Trend</span>
-			<div className=' d-flex align-items-center'>
-			<span className='GraphHeading'>Today</span>
-			  `
-	  </div> 
+		<div className='bg-light Combine mt-3 '>
+			<Container>
+				<div className='check' >
+					<div className='d-flex justify-content-between p-3 '>
+						<span className='GraphHeading'>outpatient vs. inpateint Trend</span>
+						<div className=' d-flex align-items-center'>
+							<span className='GraphHeading'>Today</span>
+							`<DropDown/>
+						</div>
+					</div>
+					<div className='border'></div>
+					<Row>
+						<Col lg={8}><canvas ref={barChartRef} className='p-3 mt-5 '></canvas></Col>
+						<Col lg={4}><canvas ref={pieChartRef} className=' p-4 mt-2'></canvas>
+							<div className='text-center d-flex justify-content-between    justify-content-evenly mb-3'>
+								<div className=' '>
+									<Icon icon="mdi:dot" color="rebeccapurple" width="40" height="40" />
+									<span className='PieChartVal'>inpateint</span>
+								</div>
+								<div className=''>
+									<Icon icon="mdi:dot" color="rebeccapurple" width="40" height="40" />
+									<span className='PieChartVal'>outpatient</span>
+								</div>
+							</div>
+						</Col>
+					</Row>
+				</div>
+			</Container>
 		</div>
-		<div className='border'></div>
-		<Row>
-			<Col lg={8}><canvas ref={barChartRef} className='p-3 mt-5 '></canvas></Col>
-			<Col lg={4}><canvas ref={pieChartRef} className=' p-4 mt-2'></canvas>
-			<div className='text-center d-flex justify-content-between    justify-content-evenly mb-3'>
-			<div className=' '>
-			<Icon icon="mdi:dot" color="rebeccapurple" width="40" height="40" />
-			<span className='PieChartVal'>inpateint</span>
-			</div>
-			<div className=''>
-			<Icon icon="mdi:dot" color="rebeccapurple" width="40" height="40" />
-			<span className='PieChartVal'>outpatient</span>
-			</div>
-			</div>
-			</Col>
-		</Row>
-	</div>
-</Container>
-</div>
 	);
 };
 export default CombinedChart;

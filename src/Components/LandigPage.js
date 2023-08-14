@@ -3,7 +3,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 import PieChart from '../Components/PieChart';
 import Combine from '../Components/Combine';
 import LineChart from '../Components/LineChart';
-import PateintDivision from '../Components/PateintDivision';
 import LastGrapg from '../Components/LastGrapg';
 import { useMediaQuery } from 'react-responsive';
 import SideNavBar from '../Components/SideNavBar'

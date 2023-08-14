@@ -76,22 +76,3 @@ export const Data = [{
 
 
 ];
-const patient =[{
-  icon: (
-    <Icon
-      icon={baselineBed} 
-      color="rebeccapurple"
-      width="50"
-      height="50"
-      style={{
-        background: "#8A70B3",
-        borderRadius: "50px",
-        padding: "5px" 
-      }}
-    />
-  ),
-  name:"caridology",
-  number:322
-
-
-}];

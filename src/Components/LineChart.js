@@ -1,18 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import { Chart, LinearScale, LineController, LineElement, PointElement, Title } from 'chart.js';
 import { Container } from 'react-bootstrap';
-import { Icon } from '@iconify/react';
-import Dropdown from 'react-bootstrap/Dropdown';
 import '../Css/Line.css'
 import DropDown from './DropDown';
 
 const LineChart = () => {
   const lineChartRef = useRef(null);
   const lineChartInstance = useRef(null);
-  const backgroundColor = (event)=>{
-       const container = event.target.parentElement;
-       container.style.backgroundColor = "white";
-  }
   useEffect(() => {
 
     Chart.register(LinearScale, LineController, LineElement, PointElement, Title);
