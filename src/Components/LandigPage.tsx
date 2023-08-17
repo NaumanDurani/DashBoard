@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import PieChart from '../Components/PieChart';
-import Combine from '../Components/Combine';
-import LineChart from '../Components/LineChart';
-import LastGrapg from '../Components/LastGrapg';
+import PieChart from './PieChart';
+import Combine from './Combine';
+import LineChart from './LineChart';
+import LastGrapg from './LastGrapg';
 import { useMediaQuery } from 'react-responsive';
-import SideNavBar from '../Components/SideNavBar'
-import Card from '../Components/Card'
+import SideNavBar from './SideNavBar'
+import Card from './Card'
 import Pateint from './Pateint';
 
 

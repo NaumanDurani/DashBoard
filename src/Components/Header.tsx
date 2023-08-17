@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import { Icon } from '@iconify/react';
-import SideNavBar from '../Components/SideNavBar'
+import SideNavBar from './SideNavBar'
 import '../Css/Header.css';
 import { useMediaQuery } from 'react-responsive';
 
-const Header = () => {
-  const [inputValue, setInputValue] = useState('');
-  const [showMenu, setShowMenu] = useState(false);
+const Header:React.FC = () => {
+  const [inputValue, setInputValue] = useState<string>('');
+  const [showMenu, setShowMenu] = useState<boolean>(false);
   const isButon = useMediaQuery({ minWidth: 768, maxWidth: 991 });
-  function HandleInputChanged(event) {
+  type NewType = React.ChangeEvent<HTMLInputElement>;
+
+  function HandleInputChanged(event:NewType) {
     setInputValue(event.target.value);
   }
   function handleMenuToggle() {
