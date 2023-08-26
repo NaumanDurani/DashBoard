@@ -6,8 +6,8 @@ import LandigPage from './Components/LandigPage';
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <LandigPage/>
+      <Header />
+      <LandigPage />
     </div>
   );
 }

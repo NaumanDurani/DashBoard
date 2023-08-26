@@ -2,18 +2,23 @@ import React from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { Icon } from '@iconify/react';
 
+interface CustomDropDownProps {
+  icon: string;
+}
+
 const backgroundColor = (event: React.MouseEvent<SVGSVGElement, MouseEvent>) => {
   const container = event.currentTarget.parentElement as HTMLElement;
   container.style.backgroundColor = 'white';
 };
 
-const DropDown: React.FC = () => {
+const CustomDropDown: React.FC<CustomDropDownProps> = function CustomDropDown({ icon }) {
   return (
     <div>
       <Dropdown>
         <Dropdown.Toggle id="dropdown-basic" className="custom-dropdown-button">
           <Icon
-            icon="mingcute:down-fill"
+            icon={icon}
+            className="custom-dropdown-icon"
             color="grey"
             width="18"
             height="18"
@@ -30,4 +35,4 @@ const DropDown: React.FC = () => {
   );
 };
 
-export default DropDown;
+export default CustomDropDown;

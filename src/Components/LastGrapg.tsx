@@ -1,23 +1,30 @@
 import React, { useEffect, useRef } from 'react';
-import { Chart, LinearScale, LineController, LineElement, Title } from 'chart.js';
+import {
+  Chart,
+  LinearScale,
+  LineController,
+  LineElement,
+  Title,
+} from 'chart.js';
 import { Container } from 'react-bootstrap';
 import '../Css/LastGraph.css';
 
-const LineChart: React.FC = () => {
-  const lineChartRef = useRef<HTMLCanvasElement | null>(null);
-  const lineChartInstance = useRef<Chart<'line', (number | undefined)[], string> | null>(null);
-
+const LineChart: React.FC = function LineChart() {
+  const lineChartRef = useRef<HTMLCanvasElement|null>(null);
+  // eslint-disable-next-line no-spaced-func, comma-spacing
+  const lineChartInstance = useRef<Chart<'line',(number|undefined)[], string>|null>(null);
   useEffect(() => {
     Chart.register(LinearScale, LineController, LineElement, Title);
-
     if (lineChartInstance.current) {
       lineChartInstance.current.destroy();
     }
 
     const lineCtx = lineChartRef.current?.getContext('2d');
 
+    // eslint-disable-next-line linebreak-style
     if (lineCtx) {
-      lineChartInstance.current = new Chart<'line', (number | undefined)[], string>(lineCtx, {
+      // eslint-disable-next-line comma-spacing
+      lineChartInstance.current = new Chart<'line',(number | undefined)[], string>(lineCtx, {
         type: 'line',
         data: {
           labels: ['14', '15', '16', '17', '18', '19'],
@@ -54,7 +61,7 @@ const LineChart: React.FC = () => {
           },
           plugins: {
             legend: {
-              display: true,
+              display: false,
               position: 'top',
             },
           },
@@ -70,12 +77,12 @@ const LineChart: React.FC = () => {
   }, []);
 
   return (
-    <div className='bluee mt-3'>
+    <div className="bluee mt-3">
       <Container>
-        <div className=''>
-          <span className='lastGraphHeading d-flex'>3456</span>
-          <span className='lastGrapgParagraph'>patient this month</span>
-          <canvas ref={lineChartRef} style={{ marginTop: '90px' }} className='' />
+        <div className="">
+          <span className="lastGraphHeading d-flex">3456</span>
+          <span className="lastGrapgParagraph">patient this month</span>
+          <canvas ref={lineChartRef} style={{ marginTop: '90px' }} className="" />
         </div>
       </Container>
     </div>

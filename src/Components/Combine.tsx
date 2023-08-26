@@ -1,19 +1,35 @@
 import React, { useEffect, useRef } from 'react';
-import { Chart, CategoryScale, LinearScale, BarController, BarElement, Title, ArcElement, DoughnutController } from 'chart.js';
+import {
+  Chart,
+  CategoryScale,
+  LinearScale,
+  BarController,
+  BarElement,
+  Title,
+  ArcElement,
+  DoughnutController,
+} from 'chart.js';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Icon } from '@iconify/react';
 import '../Css/Combine.css';
-import DropDown from './DropDown';
+import CustomDropDown from './CustomDropDown';
 
-const CombinedChart: React.FC = () => {
+const CombinedChart: React.FC = function CombinedChart() {
   const barChartRef = useRef<HTMLCanvasElement | null>(null);
   const pieChartRef = useRef<HTMLCanvasElement | null>(null);
   const barChartInstance = useRef<Chart<'bar', number[], string> | null>(null);
   const pieChartInstance = useRef<Chart<'doughnut', number[], string> | null>(null);
 
   useEffect(() => {
-    Chart.register(CategoryScale, LinearScale, BarController, BarElement, Title, ArcElement, DoughnutController);
-
+    Chart.register(
+      CategoryScale,
+      LinearScale,
+      BarController,
+      BarElement,
+      Title,
+      ArcElement,
+      DoughnutController,
+    );
     if (barChartInstance.current) {
       barChartInstance.current.destroy();
     }
@@ -57,19 +73,23 @@ const CombinedChart: React.FC = () => {
             y: {
               type: 'linear',
               beginAtZero: true,
-							ticks: {
-								stepSize: 1500,
-								callback: (value) => {
-									if ([0, 1500, 3000, 4500].includes(value as number)) {
-										return value.toString();
-									}
-									return '';
-								},
-							},
+              ticks: {
+                stepSize: 1500,
+                callback: (value) => {
+                  if ([0, 1500, 3000, 4500].includes(value as number)) {
+                    return value.toString();
+                  }
+                  return '';
+                },
+              },
+            },
+          },
+          plugins: {
+            legend: {
+              display: false,
             },
           },
         },
-        plugins: [], // Empty array for plugins
       });
     }
 
@@ -89,10 +109,10 @@ const CombinedChart: React.FC = () => {
         },
         options: {
           responsive: true,
-          cutout: 65,
+          cutout: '90%',
           plugins: {
-            title: {
-              display: true,
+            legend: {
+              display: false,
             },
           },
         },
@@ -101,31 +121,36 @@ const CombinedChart: React.FC = () => {
   }, []);
 
   return (
-    <div className='bg-light Combine mt-3'>
+    <div className="bg-light Combine mt-3">
       <Container>
-        <div className='check'>
-          <div className='d-flex justify-content-between p-3'>
-            <span className='GraphHeading'>outpatient vs. inpateint Trend</span>
-            <div className='d-flex align-items-center'>
-              <span className='GraphHeading'>Today</span>
-              <DropDown />
+        <div className="check">
+          <div className="d-flex justify-content-between p-3">
+            <span className="GraphHeading">outpatient vs. inpateint Trend</span>
+            <div className="d-flex align-items-center">
+              <span className="GraphHeading">Today</span>
+              <CustomDropDown icon="ep:arrow-down" />
             </div>
           </div>
-          <div className='border'></div>
+          <hr />
           <Row>
             <Col lg={8}>
-              <canvas ref={barChartRef} className='p-3 mt-5'></canvas>
+              <canvas ref={barChartRef} className="p-2 mt-4">1</canvas>
             </Col>
             <Col lg={4}>
-              <canvas ref={pieChartRef} className='p-4 mt-2'></canvas>
-              <div className='text-center d-flex justify-content-between justify-content-evenly mb-3'>
-                <div className=''>
-                  <Icon icon='mdi:dot' color='rebeccapurple' width='40' height='40' />
-                  <span className='PieChartVal'>inpateint</span>
+              <div className="Custom-Chart">
+                <div className="CustomIconContainer">
+                  <Icon icon="arcticons:goodwy-contacts" color="grey" className="CustomIcon" width="100" />
                 </div>
-                <div className=''>
-                  <Icon icon='mdi:dot' color='rebeccapurple' width='40' height='40' />
-                  <span className='PieChartVal'>outpatient</span>
+                <canvas ref={pieChartRef} className="p-5 ">1</canvas>
+              </div>
+              <div className="text-center d-flex justify-content-between justify-content-evenly mb-3 ">
+                <div>
+                  <Icon icon="mdi:dot" color="rebeccapurple" width="40" height="40" />
+                  <span className="PieChartVal">inpateint</span>
+                </div>
+                <div>
+                  <Icon icon="mdi:dot" color="rebeccapurple" width="40" height="40" />
+                  <span className="PieChartVal">outpatient</span>
                 </div>
               </div>
             </Col>

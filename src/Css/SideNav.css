@@ -36,5 +36,8 @@
     width:23px;
     height:23px;
 }
+.space{
+    white-space: nowrap; /* Prevent wrapping */
+}
 
 

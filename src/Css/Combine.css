@@ -3,4 +3,29 @@
     font-weight: 500;
     font-size: 16px;
     text-transform: capitalize;}
+
+  
+    .Custom-Chart {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+    }
+    
+    .CustomIconContainer {
+      position: absolute;
+      top: 50%;
+      left: 51%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .CustomIcon {
+      width: 90%; /* Adjust the image size */
+      max-width: 100px; /* Set a maximum width */
+    }
+    
+      
+      
+    
  

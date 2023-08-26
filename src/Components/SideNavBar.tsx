@@ -1,11 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Button } from 'react-bootstrap';
 import { Icon } from '@iconify/react';
-import { Button } from 'react-bootstrap';
-import '../Css/SideNav.css'
+import '../Css/SideNav.css';
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
-
 
 function App() {
   return (
@@ -15,38 +13,38 @@ function App() {
         <NavbarCollapse id="basic-navbar-nav">
           <Nav className="flex-column">
             <Nav.Link>
-              <Button>
-                <span className='reg p-1 '>Register patient</span>
+              <Button className="space">
+                <span className="reg p-1">Register patient</span>
                 <Icon icon="charm:plus" color="white" width="15" height="15" />
               </Button>
             </Nav.Link>
             <Nav.Link href="#Patient">
               <Icon icon="heroicons-solid:users" />
-              <span >Patients</span>
+              <span>Patients</span>
             </Nav.Link>
             <Nav.Link href="#Overview">
               <Icon icon="material-symbols:overview-key-sharp" />
-              <span >Over View</span>
+              <span>Over View</span>
             </Nav.Link>
             <Nav.Link href="#Map">
               <Icon icon="bxs:map" />
-              <span >Map</span>
+              <span>Map</span>
             </Nav.Link>
             <Nav.Link href="Department">
               <Icon icon="majesticons:home" />
-              <span >Departments</span>
+              <span>Departments</span>
             </Nav.Link>
             <Nav.Link href="#Doctor">
               <Icon icon="fluent:doctor-28-filled" />
-              <span >Doctors</span>
+              <span>Doctors</span>
             </Nav.Link>
             <Nav.Link href="#History">
               <Icon icon="ic:twotone-history-edu" />
-              <span >History</span>
+              <span>History</span>
             </Nav.Link>
             <Nav.Link href="#settings">
               <Icon icon="basil:settings-solid" />
-              <span >Settings</span>
+              <span>Settings</span>
             </Nav.Link>
           </Nav>
         </NavbarCollapse>
@@ -54,5 +52,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
