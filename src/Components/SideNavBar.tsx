@@ -12,12 +12,10 @@ function App() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <NavbarCollapse id="basic-navbar-nav">
           <Nav className="flex-column">
-            <Nav.Link>
-              <Button className="space">
-                <span className="reg p-1">Register patient</span>
-                <Icon icon="charm:plus" color="white" width="15" height="15" />
-              </Button>
-            </Nav.Link>
+            <Button className="space">
+              <span className="reg p-1">Register patient</span>
+              <Icon icon="charm:plus" color="white" width="15" height="15" />
+            </Button>
             <Nav.Link href="#Patient">
               <Icon icon="heroicons-solid:users" />
               <span>Patients</span>
