@@ -20,11 +20,7 @@ const LandingPage:React.FC = function LandingPage() {
             {isMobile ? '' : <SideNavBar />}
           </Col>
           <Col lg={10} md={12} sm={12} style={{ backgroundColor: '#F0EAFD' }} className="p-4">
-            <Row>
-              <Col lg={12} md={12}>
-                <Card />
-              </Col>
-            </Row>
+            <Card />
             <Row>
               <Col lg={9} md={12} sm={12}>
                 <Combine />
