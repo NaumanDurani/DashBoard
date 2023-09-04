@@ -1,0 +1,65 @@
+.Notification-Drop-down{
+  background:transparent;
+  border: none;
+  border-color: none;
+  padding: 0px;
+  box-shadow: none;
+  position: relative;
+}
+.NotificationDropDown:hover{
+  background-color: transparent;
+  
+}
+.NotificationDropDown .dropdown-header{
+  font-size: 18px;
+  font-weight: 700;
+ display: flex;
+ justify-content: center;
+}
+
+
+.NotificationDropDown .dropdown-toggle::after{
+  display: none;
+    
+  }
+
+.Notification-dropdown-icon{
+  height: 25px;
+  width: 25px;
+  color: grey;
+}
+.Notification-Drop-down:active{
+  background-color: transparent !important;
+}
+.Notification-Drop-down:focus{
+  background-color: transparent !important;
+} 
+.NotificationDropDown .dropdown-menu{
+  width: 300px;
+}
+.NotificationDropDown img{
+  width: 20%;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.NotificationDropDown .ImgText{
+  display: flex;
+  align-content: center;
+  align-content: center;
+  width: 275px;
+  
+}
+.NotificationDropDown text {
+  
+  font-weight: 500;
+  font-size: 15px;
+}
+.NotificationDropDown span {
+  color:grey;
+  display: flex;
+  flex-direction: column;
+}
+.NotificationDropDown .dropdown-item:hover{
+  background-color: #d3d3d3;
+  color: grey;
+}

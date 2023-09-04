@@ -8,7 +8,7 @@ import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 function App() {
   return (
     <div className="left-navbar mt-1">
-      <Navbar bg="light" variant="light" expand="lg" className="flex-column">
+      <Navbar expand="lg" className="flex-colum white">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <NavbarCollapse id="basic-navbar-nav">
           <Nav className="flex-column">

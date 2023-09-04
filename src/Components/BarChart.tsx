@@ -28,12 +28,12 @@ const LineChart: React.FC = function LineChart() {
 
     if (combinedChartCtx) {
       combinedChartInstance.current = new Chart(combinedChartCtx, {
-        type: 'bar', // Use 'bar' as the base type for the combo chart
+        type: 'bar',
         data: {
           labels: ['7am', '8am', '9am', '10am', '11am', '12pm'],
           datasets: [
             {
-              type: 'line', // Use 'line' type for the first dataset (line chart)
+              type: 'line',
               label: 'Data Set 3',
               data: [49, 100, 102, 120, 90, 120],
               borderColor: 'orange',

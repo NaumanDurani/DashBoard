@@ -23,7 +23,7 @@ const CustomCard: React.FC = function CustomCard() {
         <Row className="gy-2">
           {Data.map((values: Value) => (
             <Col lg={3} md={3} key={values.title}>
-              <Card className="bg-light">
+              <Card className="white">
                 <Card.Body>
                   <CardHeader className="d-flex justify-content-end">
                     <CustomDropDown icon="entypo:dots-three-horizontal" />

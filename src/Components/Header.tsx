@@ -3,6 +3,8 @@ import { Container, Navbar, Nav } from 'react-bootstrap';
 import { Icon } from '@iconify/react';
 import { useMediaQuery } from 'react-responsive';
 import SideNavBar from './SideNavBar';
+import NotificationDropDown from './NotificationDropDOwn';
+import ProfileNotification from './ProfileNotification';
 import '../Css/Header.css';
 
 const Header:React.FC = function Header() {
@@ -53,28 +55,10 @@ const Header:React.FC = function Header() {
             </div>
             <Nav className="ml-md-3 d-flex flex-row'">
               <Nav.Link>
-                <Icon
-                  icon="mdi:bell-outline"
-                  color="grey"
-                  width="25"
-                  height="25"
-                />
+                <NotificationDropDown icon="mdi:bell-outline" />
               </Nav.Link>
               <Nav.Link>
-                <Icon
-                  icon="ei:user"
-                  color="grey"
-                  width="25"
-                  height="25"
-                />
-              </Nav.Link>
-              <Nav.Link>
-                <Icon
-                  icon="mingcute:down-fill"
-                  color="grey"
-                  width="25"
-                  height="25"
-                />
+                <ProfileNotification icon="ei:user" />
               </Nav.Link>
             </Nav>
             {showMenu && <SideNavBar />}
