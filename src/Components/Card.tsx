@@ -8,7 +8,7 @@ import {
 import CardHeader from 'react-bootstrap/esm/CardHeader';
 import Data from './Data';
 import CustomDropDown from './CustomDropDown';
-import '../Css/Card.css';
+// import '../Css/Card.css';
 
 interface Value {
   icon: JSX.Element;

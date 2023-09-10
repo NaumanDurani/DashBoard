@@ -1,0 +1,114 @@
+
+.ProfileNotification .dropdown-header span{
+  text-transform: $text-transform-capitalize;
+  border-radius: $border-radius-large;
+  border:$border-style;
+  padding: $padding-in-between-none;
+  width: 36%;
+  height:25px;
+  color:$danger;
+  background-color: lightRed;
+  align-items:$align-items-center;
+  font-size:$font-extra-small;
+  background-color: #ffcccb;
+  margin-top:$margin-in-between-medium;
+}
+.ProfileNotification .Titles{
+  align-items:$align-items-center;
+  line-height:$line-height-small; 
+  }
+  .ProfileNotification .Titles p{ 
+    margin:$margin-medium; 
+  }
+  .try {
+    align-items: center;
+  
+   }
+   .try p{
+    margin:$margin-medium; 
+   }
+   .ProfileNotification .dropdown-header strong{
+    font-size:$font-size-large;
+  }
+  .ProfileNotification .heading strong{
+    font-size: $font-size-medium;
+    padding: $padding-none;
+  }
+  .ProfileNotification .dropdown-header img{
+    width: 42%;
+    height:130px;
+  }
+  .thin-progress-bar  {
+    height: 5px; /* Adjust the height as needed */
+  }
+  .ProfileNotification:hover{
+    background-color:$background-transparent;  
+  }
+  .ProfileNotification .dropdown-toggle::after{
+    display: none;
+      
+    }
+  
+  .Notification-dropdown-icon{
+    height: 25px;
+    width: 25px;
+    color:$secondary-color;
+  }
+  .Notification-Drop-down:active{
+    background-color: $background-transparent !important;
+  }
+  .Notification-Drop-down:focus{
+    background-color: $background-transparent!important;
+  } 
+  .ProfileNotification .dropdown-menu{
+    width:380px;
+  
+  }
+  .ProfileNotification img{
+    width: 20%;
+    border-radius: $border-radius-extra-large;
+    margin-right: $margin-in-between-medium;
+    
+  }
+  .ProfileNotification .ImgText{
+    display: $display-flex;
+    align-content: $align-items-center;
+    //alignItems
+    width: 275px;
+    
+  }
+  .ProfileNotification .IconText .iconify{
+  
+    background-color: lightcoral;
+    border-radius:$border-radius-medium;
+    padding: $padding-in-between-extras;
+    width: 100%;
+    height: auto;
+  }
+  
+  
+
+  .ProfileNotification span {
+    color:$secondary-color;
+    display: $display-flex;
+    flex-direction:$flex-direction-column;
+  }
+  .ProfileNotification .dropdown-item:hover{
+    background-color: #d3d3d3;
+    color: $secondary-color;
+  }
+  .DropDownFooter{
+  
+    display:$display-flex;
+    justify-content:$justify-content-center;
+    justify-content:$justify-content-around;
+
+  }
+  .DropDownFooter .btn{
+    padding: $padding-none;
+    align-items:$align-items-center;
+    display:$display-flex;
+  }
+  
+  
+  

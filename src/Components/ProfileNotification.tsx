@@ -3,7 +3,6 @@ import React from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import { Icon } from '@iconify/react';
-import '../Css/ProfileNotification.css';
 
 interface ProfileNotification {
   icon: string;
@@ -90,7 +89,7 @@ const ProfileNotification: React.FC<ProfileNotification> = function Notification
               <Icon icon="tabler:edit" color="gray" />
               <span>Edit Profile</span>
             </button>
-            <button className="btn " type="button">
+            <button className="btn" type="button">
               <Icon icon="ic:baseline-logout" color="gray" />
               <span>Log Out</span>
             </button>

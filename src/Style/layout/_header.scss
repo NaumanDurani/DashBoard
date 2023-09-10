@@ -1,0 +1,29 @@
+.search {
+  width: 100%;
+  position: $position-relative;
+}
+.searchIcon {
+  position:$position-absolute ;
+  left: 6%;
+  top: 50%; 
+  color: rgba(36, 82, 70, 0.1411764705882353);
+  transform: translateY(-45%); 
+}
+.searchInput {
+  width: calc(100% - 20px); 
+  border: none;
+  padding-left:$padding-in-between;
+  height: 30px;
+  
+}
+.searchInput:focus {
+  outline-color: rgba(36, 82, 70, 0.1411764705882353); ;
+   
+}
+::placeholder {
+  color:$secondary-color;
+  padding-left: $padding-in-between;
+  position:$position-absolute;
+  left: 4%;
+  
+}

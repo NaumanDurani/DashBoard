@@ -10,7 +10,6 @@ import {
 } from 'chart.js';
 import 'chart.js/auto';
 import { Container } from 'react-bootstrap';
-import '../Css/Line.css';
 import CustomDropDown from './CustomDropDown';
 
 const LineChart: React.FC = function LineChart() {

@@ -9,7 +9,6 @@ import {
   Title,
 } from 'chart.js';
 import { Container } from 'react-bootstrap';
-import '../Css/Line.css';
 import CustomDropDown from './CustomDropDown';
 
 const LineChart: React.FC = function LineChart() {

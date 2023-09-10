@@ -11,7 +11,6 @@ import {
 } from 'chart.js';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Icon } from '@iconify/react';
-import '../Css/Combine.css';
 import CustomDropDown from './CustomDropDown';
 
 const CombinedChart: React.FC = function CombinedChart() {

@@ -1,7 +1,6 @@
 import React from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { Icon } from '@iconify/react';
-import '../Css/DropDown.css';
 
 interface CustomDropDownProps {
   icon: string;

@@ -2,7 +2,6 @@
 import React from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { Icon } from '@iconify/react';
-import '../Css/NotificationDropDown.css';
 
 interface NotificationDropDOwnProps {
   icon: string;

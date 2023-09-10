@@ -1,0 +1,51 @@
+.custom-dropdown-button:hover {
+  background: none;
+}
+.btn :hover{
+  background-color:$background-transparent ;
+}
+
+.custom-dropdown-button[aria-expanded="true"] {
+
+  color: $danger;
+}
+
+.custom-dropdown-icon {
+  color:$secondary-color;
+  width: 18px; 
+  height: 18px; 
+  margin-right: $margin-small;
+
+}
+
+.dropdown-menu {
+  background-color: white; 
+  border: none; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.dropdown-item {
+  color: black; 
+  padding: 8px 20px;
+}
+
+
+.dropdown-item:hover {
+  background-color: grey;
+  color: white; 
+}
+
+
+.custom-dropdown-button::after {
+  display:none;
+  content: "/";
+  outline: none;
+  background-color: $background-transparent;
+}
+.custom-dropdown-button:active{
+background-color: $background-transparent !important;
+}
+.custom-dropdown-button:focus{
+background-color: $background-transparent !important;
+}

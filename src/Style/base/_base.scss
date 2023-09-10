@@ -1,0 +1,97 @@
+@import 'variable';
+@import 'mixins';
+ 
+
+// typography
+.serviceHeading{
+  font-family:$font-family;
+  font-weight:$font-weight-extra;
+  font-size:$font-size-extra; //20
+  line-height: $line-height-medium;
+
+}
+.servicePar{
+  @include font-family ();
+  color:$secondary-color;
+  font-size: $font-size-small; //14
+  margin-left:10px;
+  letter-spacing:0px;
+ 
+}
+// Combine TypoGraphy
+.GraphHeading{
+  @include font-family ();
+  font-size:$font-size-medium;
+}
+.Custom-Chart {
+ @include center-both();
+
+}
+
+// pieChart 
+.PieChartVal{
+  @include font-family ();
+  font-size: $font-size-small;
+  margin-top:$marging-extra-large;
+}
+.Custom-PieChart {
+  @include center-both();
+
+}
+//pateint 
+.patient span{
+  @include font-family ();
+  font-size:$font-size-large; //18px
+  padding: $padding-in-between;//9px
+  color: $secondary-color;//grey
+}
+// side nav
+.left-navbar span{
+  @include font-family ();
+  font-size:$font-size-large; //18px
+  padding: $padding-in-between-extras; //14px 
+  color: $secondary-color;//grey
+}
+.left-navbar .reg{
+  @include font-family ();
+  font-size: $font-size-medium;//16px
+  color:white;
+  
+}
+//lastGraph 
+.lastGraphHeading{
+  @include font-family ();
+  font-size: $font-size-extra-large;//35px
+  padding: $padding-special-design;//15px
+  color: white;
+}
+.lastGrapgParagraph{
+  @include font-family ();
+  font-size:$font-size-large; //18px
+  padding: $padding-in-between;//9px
+  color: white;
+
+}
+//dopdown
+.custom-dropdown-button {
+   @include dropdown-button () ;
+}
+//profileNotification
+.ProfileNotification{
+
+  @include dropdown-button () ;
+}
+h6{
+  color: $secondary-color;
+  font-size: $font-size-small; //14px
+}
+.ProfileNotification text {
+  @include font-family ();
+  font-size: $font-size-small;//14px
+}
+//NotificationDrop
+.Notification-Drop-down{
+  @include dropdown-button () ; 
+}
+
+

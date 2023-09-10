@@ -8,7 +8,6 @@ import {
   DoughnutController,
 } from 'chart.js';
 import { Icon } from '@iconify/react';
-import '../Css/PieChart.css';
 
 const PieChart: React.FC = function PieChart() {
   const chartRef = useRef<HTMLCanvasElement | null>(null);

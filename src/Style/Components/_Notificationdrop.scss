@@ -1,0 +1,71 @@
+.Notification-Drop-down:hover{
+  background:none;
+}
+.btn :hover{
+  background-color:$background-transparent ;
+}
+.NotificationDropDown .dropdown-header{
+  font-size:$font-size-large;
+  font-weight:$font-weight-bold;
+   display:$display-flex;
+  justify-content:$justify-content-center;
+}
+
+
+.NotificationDropDown .dropdown-toggle::after{
+  display: none;
+    
+  }
+
+.Notification-dropdown-icon{
+  height: 25px;
+  width: 25px;
+  color:$secondary-color;
+}
+.Notification-Drop-down:active{
+  background-color: $background-transparent!important;
+}
+.Notification-Drop-down:focus{
+  background-color: $background-transparent!important;
+} 
+.NotificationDropDown .dropdown-menu{
+  width: 300px;
+}
+.NotificationDropDown img{
+  width: 20%;
+  border-radius:$border-radius-medium-large;
+  margin-right:$margin-in-between-medium;
+}
+.NotificationDropDown .ImgText{
+  display:$display-flex;
+  align-content:$align-items-center;
+  width: 275px;
+  
+}
+.NotificationDropDown text {
+  font-weight:$font-weight-medium;
+  font-size: $font-size-small;
+}
+.NotificationDropDown span {
+  color:$secondary-color;
+  display:$display-flex;
+  flex-direction:$flex-direction-column;
+}
+.NotificationDropDown .dropdown-item:hover{
+  background-color: #d3d3d3;
+  color: $secondary-color;
+
+}
+
+.NotificationDropDown-button::after {
+  display:none;
+  content: "/";
+  outline: none;
+  background-color: $background-transparent;
+}
+.NotificationDropDown-button:active{
+background-color: $background-transparent !important;
+}
+.NotificationDropDown-button:focus{
+background-color: $background-transparent !important;
+}

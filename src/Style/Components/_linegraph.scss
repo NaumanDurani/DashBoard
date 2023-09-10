@@ -1,0 +1,17 @@
+.custom-dropdown-button {
+  background: none;
+  border: none;
+  padding: $padding-none;
+  outline: none;
+  box-shadow: none;
+}
+.custom-dropdown-button:hover{
+  background: none;
+}
+.custom-dropdown-button .dropdown-toggle[aria-expanded="true"] .icon {
+  color: $secondary-color; 
+}
+.dropdown-item:hover{
+ background-color:$secondary-color;
+  
+}

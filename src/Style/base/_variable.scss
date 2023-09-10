@@ -1,0 +1,101 @@
+//colors
+$primary-color: rebeccapurple;
+$secondary-color:grey;
+$danger:red;
+$light:white;
+
+
+//background
+$background-color:white;
+$background-transparent:transparent;
+// fonts
+$font-family: 'Roboto', sans-serif;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-extra:900;
+
+// Font sizes
+$font-extra-small:12px;
+$font-size-small: 14px;
+$font-size-medium: 16px;
+$font-size-large: 18px;
+$font-size-extra: 20px; 
+$font-size-extra-large:35px;
+
+// Line heights
+$line-height-small: 9px;
+$line-height-medium: 20px;
+$line-height-medium-large:40px;
+$line-height-large:60px;
+
+// Text Transformations
+$text-transform-uppercase: uppercase;
+$text-transform-lowercase: lowercase;
+$text-transform-capitalize: capitalize;
+
+
+// padding
+$padding-none:0px;
+$padding-in-between-none:2px;
+$padding-small: 8px;
+$padding-in-between: 9px; 
+$padding-in-between-extras:10px; 
+$padding-special-design: 15px;
+$padding-medium: 20px;
+$padding-large: 24px;
+
+//letterSpacing
+$letter-spacing-normal:0px;
+
+// Margin values
+$margin-none: 0px;
+$margin-small: 4px;
+$margin-medium: 8px;
+$margin-in-between-medium: 10px;
+$margin-large: 16px;
+$marging-extra-large:30px; 
+$marging-extra-large-large:150px;
+
+
+
+//BorderRadius 
+$border-radius-medium:50%;
+$border-radius-medium-large:100%;
+$border-radius-large:10px;
+$border-radius-extra-large:100px;
+$border-style: 2px solid red;
+
+
+// Layout Properties
+$display-flex: flex;
+$justify-content-center: center;
+$justify-content-end: flex-end;
+$justify-content-between: space-between;
+$justify-content-around: space-around;
+$flex-grow: 1;
+$flex-basis-medium: 50%;
+
+// Flex Container Properties
+$flex-direction-row: row;
+$flex-direction-column: column;
+
+
+// Alignment Properties
+$align-items-center: center;
+$align-items-start: flex-start;
+$align-items-end: flex-end;
+$align-items-baseline: baseline;
+$align-items-stretch: stretch;
+
+
+// Position Properties
+$position-absolute: absolute;
+$position-relative: relative;
+
+// Top, Right, Bottom, Left Values
+$top-value-small: 5px;
+$right-value-medium: 10px;
+$bottom-value-large: 20px;
+$left-value-extra: 30px;
+

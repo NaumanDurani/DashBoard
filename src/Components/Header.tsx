@@ -5,7 +5,6 @@ import { useMediaQuery } from 'react-responsive';
 import SideNavBar from './SideNavBar';
 import NotificationDropDown from './NotificationDropDOwn';
 import ProfileNotification from './ProfileNotification';
-import '../Css/Header.css';
 
 const Header:React.FC = function Header() {
   const [inputValue, setInputValue] = useState<string>('');

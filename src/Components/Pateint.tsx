@@ -1,13 +1,12 @@
 import React from 'react';
 import { Nav } from 'react-bootstrap';
 import { Icon } from '@iconify/react';
-import '../Css/Pateint.css';
 
 function Pateint() {
   return (
     <div className="patient mt-3 bg-light">
       <Nav className="flex-column">
-        <span className=" GraphHeading d-flex  justify-content-center p-3 ">pateint by Gender</span>
+        <span className=" GraphHeading text-dark d-flex  justify-content-center p-3 ">pateint by Gender</span>
         <Nav.Link>
           <div>
             <Icon icon="heroicons-solid:users" />

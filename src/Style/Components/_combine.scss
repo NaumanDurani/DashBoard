@@ -1,0 +1,13 @@
+
+.CustomIconContainer {
+  position:$position-absolute;
+  top: 50%;
+  left: 50%;
+  display:$display-flex;
+  justify-content:$align-items-center;
+  transform: translate(-50%, -50%);
+}
+.CustomIcon {
+  width: 90%; /* Adjust the image size */
+  max-width: 100px; /* Set a maximum width */
+}

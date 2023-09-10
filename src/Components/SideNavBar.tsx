@@ -2,7 +2,6 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, Button } from 'react-bootstrap';
 import { Icon } from '@iconify/react';
-import '../Css/SideNav.css';
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 
 function App() {

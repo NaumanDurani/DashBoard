@@ -1,0 +1,20 @@
+
+.left-navbar .nav-link{
+  display: $display-flex;
+  align-Items: $align-items-center;
+  line-height:$line-height-medium-large;
+  
+}
+.left-navbar .nav-link >span:hover{
+  color:$primary-color;
+ 
+
+}
+.left-navbar .iconify  {
+  color:$secondary-color ;
+  width:23px;
+  height:23px;
+}
+.space{
+  white-space: nowrap; /* Prevent wrapping */
+}

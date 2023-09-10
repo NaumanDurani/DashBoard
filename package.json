@@ -16,6 +16,7 @@
     "react-dom": "^18.2.0",
     "react-responsive": "^9.0.2",
     "react-scripts": "5.0.1",
+    "sass": "^1.66.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -43,20 +44,19 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.7",
     "@iconify/icons-ic": "^1.2.13",
     "@iconify/react": "^4.1.1",
+    "@types/file-saver": "^2.0.5",
+    "@types/uuid": "^9.0.1",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
     "@typescript-eslint/parser": "^6.4.0",
     "eslint": "^8.47.0",
-    "eslint-plugin-react": "^7.33.2",
-    "typescript": "^5.1.6",
-    "@babel/plugin-proposal-private-property-in-object": "^7.16.7",
-    "@types/file-saver": "^2.0.5",
-    "@types/uuid": "^9.0.1",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.27.4",
     "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-react-hooks":"^4.6.0"
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "typescript": "^5.1.6"
+  }
 }
-}
-

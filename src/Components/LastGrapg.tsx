@@ -7,7 +7,6 @@ import {
   Title,
 } from 'chart.js';
 import { Container } from 'react-bootstrap';
-import '../Css/LastGraph.css';
 
 const LineChart: React.FC = function LineChart() {
   const lineChartRef = useRef<HTMLCanvasElement|null>(null);
