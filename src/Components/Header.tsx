@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 import React, { useState, useEffect } from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import { Icon } from '@iconify/react';
@@ -23,6 +24,8 @@ const Header:React.FC = function Header() {
       setShowMenu(false);
     }
   }, [isButon]);
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const sanaImage = require('../Assets/sana.jpg');
   return (
     <div>
       <Navbar bg="light" expand="md">
@@ -57,7 +60,15 @@ const Header:React.FC = function Header() {
                 <NotificationDropDown icon="mdi:bell-outline" />
               </Nav.Link>
               <Nav.Link>
-                <ProfileNotification icon="ei:user" />
+                <div className="servicePar header-img-div">
+                  <div className="header-img">
+                    <img src={sanaImage} alt="sorry" />
+                  </div>
+                  sanan durani
+                </div>
+              </Nav.Link>
+              <Nav.Link>
+                <ProfileNotification icon="ep:arrow-down" />
               </Nav.Link>
             </Nav>
             {showMenu && <SideNavBar />}
