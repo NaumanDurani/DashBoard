@@ -25,7 +25,7 @@ const Header:React.FC = function Header() {
     }
   }, [isButon]);
   // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const sanaImage = require('../Assets/sana.jpg');
+  const userImg = require('../Assets/userImg.png');
   return (
     <div>
       <Navbar bg="light" expand="md">
@@ -62,9 +62,9 @@ const Header:React.FC = function Header() {
               <Nav.Link>
                 <div className="servicePar header-img-div">
                   <div className="header-img">
-                    <img src={sanaImage} alt="sorry" />
+                    <img src={userImg} alt="sorry" />
                   </div>
-                  sanan durani
+                  Nauman durani
                 </div>
               </Nav.Link>
               <Nav.Link>

@@ -14,7 +14,7 @@ const backgroundColor = (event: React.MouseEvent<SVGSVGElement, MouseEvent>) => 
 // eslint-disable-next-line max-len
 const NotificationDropDOwn: React.FC<NotificationDropDOwnProps> = function NotificationDropDOwn({ icon }) {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const sanaImage = require('../Assets/sana.jpg');
+  const userImg = require('../Assets/userImg.png');
   return (
     <div className="NotificationDropDown">
       <Dropdown align="end">
@@ -30,9 +30,9 @@ const NotificationDropDOwn: React.FC<NotificationDropDOwnProps> = function Notif
           <Dropdown.Divider />
           <Dropdown.Item href="#/action-1">
             <div className="ImgText">
-              <img src={sanaImage} alt="sorry" />
+              <img src={userImg} alt="sorry" />
               <text>
-                <strong>Sanan Durani</strong>
+                <strong>Nauman Durani</strong>
                 <span> posted a photo on your wall</span>
               </text>
             </div>
@@ -40,9 +40,9 @@ const NotificationDropDOwn: React.FC<NotificationDropDOwnProps> = function Notif
           <Dropdown.Divider />
           <Dropdown.Item href="#/action-2">
             <div className="ImgText">
-              <img src={sanaImage} alt="sorry" />
+              <img src={userImg} alt="sorry" />
               <text>
-                <strong>Sanan Durani</strong>
+                <strong>Nauman Durani</strong>
                 <span> posted a photo on your wall</span>
               </text>
             </div>
@@ -50,9 +50,9 @@ const NotificationDropDOwn: React.FC<NotificationDropDOwnProps> = function Notif
           <Dropdown.Divider />
           <Dropdown.Item href="#/action-3">
             <div className="ImgText">
-              <img src={sanaImage} alt="sorry" />
+              <img src={userImg} alt="sorry" />
               <text>
-                <strong>Sanan Durani</strong>
+                <strong>Nauman Durani</strong>
                 <span> posted a photo on your wall</span>
               </text>
             </div>

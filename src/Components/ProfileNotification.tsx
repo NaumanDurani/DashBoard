@@ -15,7 +15,7 @@ const backgroundColor = (event: React.MouseEvent<SVGSVGElement, MouseEvent>) => 
 // eslint-disable-next-line max-len
 const ProfileNotification: React.FC<ProfileNotification> = function NotificationDropDOwn({ icon }) {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const sanaImage = require('../Assets/sana.jpg');
+  const userImg = require('../Assets/userImg.png');
   return (
     <div className="ProfileNotification">
       <Dropdown align="end">
@@ -29,17 +29,17 @@ const ProfileNotification: React.FC<ProfileNotification> = function Notification
         <Dropdown.Menu>
           <Dropdown.Header>
             <div className="ImgText">
-              <img src={sanaImage} alt="sorry" />
+              <img src={userImg} alt="sorry" />
               <text>
-                <strong>Sanan Durani</strong>
+                <strong>Nauman Durani</strong>
                 <span>admin</span>
                 <div className="Titles d-flex mt-3">
                   <Icon icon="ooui:message" color="gray" />
-                  <p>SananDurani@gmail.com</p>
+                  <p>xyz@gmail.com</p>
                 </div>
                 <div className="d-flex try">
                   <Icon icon="tdesign:location" color="gray" />
-                  <p>Raheed Qri Road peshawar</p>
+                  <p>HomeTown,House#</p>
                 </div>
               </text>
             </div>
